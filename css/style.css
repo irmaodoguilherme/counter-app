@@ -15,3 +15,10 @@
 .bg-trans {
   background-color: rgb(0, 0, 0, 0);
 }
+
+.minw-10r {
+  min-width: 10rem;
+}
+.gap-1 {
+  gap: 1rem;
+}
