@@ -3,3 +3,15 @@
   margin: 0%;
   box-sizing: border-box;
 }
+
+.fs-5r {
+  font-size: 5rem;
+}
+
+.border-0 {
+  border: 0;
+}
+
+.bg-trans {
+  background-color: rgb(0, 0, 0, 0);
+}

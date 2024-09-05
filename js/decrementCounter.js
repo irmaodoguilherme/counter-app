@@ -1,2 +1,2 @@
-export const decrementCounter = () =>
+export const decrementCounter = counter =>
   counter.valueAsNumber = --counter.valueAsNumber

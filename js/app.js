@@ -1,7 +1,6 @@
 const buttonIncrementCounter = document.querySelector('[data-js="button-increment-counter"]')
 const buttonDecrementCounter = document.querySelector('[data-js="button-decrement-counter"]')
 const buttonResetCounter = document.querySelector('[data-js="button-reset-counter"]')
-const counter = document.querySelector('[data-js="counter"]')
 
 const handleButtonClick = async e => {
   const clickedButton = e.target.dataset.js
@@ -9,19 +8,22 @@ const handleButtonClick = async e => {
   const isClickedButtonDecrement = clickedButton.includes('decrement')
   
   if(isClickedButtonIncrement) {
+    const counter = document.querySelector('[data-js="counter"]')
     const { incrementCounter } = await import('./incrementCounter.js')
-    incrementCounter()
+    incrementCounter(counter)
     return
   }
   
   if(isClickedButtonDecrement) {
+    const counter = document.querySelector('[data-js="counter"]')
     const { decrementCounter } = await import('./decrementCounter.js')
-    decrementCounter()
+    decrementCounter(counter)
     return
   }
   
+  const counter = document.querySelector('[data-js="counter"]')
   const { resetCounter } = await import('./resetCounter.js')
-  resetCounter()
+  resetCounter(counter)
 }
 
 buttonIncrementCounter.addEventListener('click', handleButtonClick)

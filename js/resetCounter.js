@@ -1,1 +1,1 @@
-export const resetCounter = () => counter.valueAsNumber = 0
+export const resetCounter = counter => counter.valueAsNumber = 0
