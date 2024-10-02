@@ -11,7 +11,7 @@ Um contador que pode ser incrementado, decrementado ou zerado.
 
 <h2 id="como-acessar">Como acessar</h2>
 
-Você pode acessá-lo [aqui]() ou através do link na seção 'About'.
+Você pode acessá-lo [aqui](https://counter-gal.netlify.app/) ou através do link na seção 'About'.
 
 
 <h2 id="como-usá-la">Como usá-lo</h2>
