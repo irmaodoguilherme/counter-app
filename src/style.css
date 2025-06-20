@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, main {
+    height: 100%;
+}
+
+body {
+    background: #060e11;
+}
+
+main {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+span {
+    font-size: 6rem;
+    transition: opacity .15s ease-in-out;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem 2rem;
+    min-height: 100%;
+}
+
+button {
+    font-size: 2rem;
+    border: none;
+    border-radius: .1rem;
+    background-color: rgb(56 64 67);
+    padding-inline: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    cursor: pointer;
+    transition: transform .08s ease-in-out, background-color .05s ease-in-out;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+button:hover, button:focus-visible {
+    transform: scale(1.05);
+}
+
+button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: .2rem;
+}
+
+button:active {
+    background-color: rgb(36 44 47);
+}
+
+button, span {
+    color: #fff;
+}
+
+.fade {
+    opacity: 0;
+}

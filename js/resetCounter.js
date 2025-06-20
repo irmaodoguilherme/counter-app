@@ -1,1 +1,0 @@
-export const resetCounter = counter => counter.valueAsNumber = 0
