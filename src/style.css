@@ -18,11 +18,20 @@ html, body, main {
 
 body {
     background: #060e11;
+    gap: 2rem;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
-    display: grid;
-    place-content: center;
+    height: fit-content;
+    margin-top: auto;
+}
+
+main, footer {
     text-align: center;
 }
 
@@ -36,7 +45,11 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem 2rem;
-    min-height: 100%;
+}
+
+li {
+    height: 100%;
+    max-height: fit-content;
 }
 
 button {
@@ -49,8 +62,6 @@ button {
     padding-bottom: .5rem;
     cursor: pointer;
     transition: transform .08s ease-in-out, background-color .05s ease-in-out;
-    word-wrap: break-word;
-    word-break: break-word;
 }
 
 button:hover, button:focus-visible {
@@ -66,8 +77,15 @@ button:active {
     background-color: rgb(36 44 47);
 }
 
-button, span {
+button, span, footer {
     color: #fff;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+footer {
+    font-size: 1.1rem;
+    margin-bottom: auto;
 }
 
 .fade {
